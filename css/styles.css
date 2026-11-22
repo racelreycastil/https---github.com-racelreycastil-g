@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  background: #c8d3e0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+header {
+  background: linear-gradient(#3a7bd5, #1c4fa0);
+  border-bottom: 3px solid #0f2f66;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #0f2f66;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav a {
+  padding: 6px 12px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  background: #2f66c0;
+  border-color: #0f2f66;
+}
+
+main {
+  max-width: 960px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 2px solid #4a4a4a;
+  box-shadow: 3px 3px 0 #8a96a6;
+}
+
+h1,
+h2 {
+  margin: 0 0 10px;
+  color: #1c4fa0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  padding-bottom: 6px;
+  font-size: 20px;
+  border-bottom: 2px solid #1c4fa0;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.note {
+  color: #666;
+  font-style: italic;
+}
+
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  background: #e8eef7;
+  border: 2px solid #4a4a4a;
+}
+
+.hero div {
+  flex: 1 1 300px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 18px;
+  color: #fff;
+  background: linear-gradient(#5cc15c, #2f8f2f);
+  border: 2px solid #1d5f1d;
+  font: bold 14px Verdana, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(#6fd36f, #3aa03a);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+form button {
+  margin-top: 0;
+}
+
+select {
+  padding: 6px;
+  font: inherit;
+  border: 2px solid #4a4a4a;
+  background: #fff;
+}
+
+footer {
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(#3a7bd5, #1c4fa0);
+  border-top: 3px solid #0f2f66;
+}
+
+footer nav {
+  justify-content: center;
+}
+
+footer p {
+  margin: 4px 0;
+  font-size: 12px;
+}
