@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- mafia boss / the thingy in the tab head stuff-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
+  <!--navigation and logo home-->
   <body>
     <header>
       <div class="bar">
@@ -27,7 +29,7 @@
       </div>
     </header>
 
-    <main>
+    <main> <!--1st border w/ desc (start shopping)-->
       <section class="panel hero" id="home">
         <img src="images/ffsticker2.gif" alt="Skrapyard mascot" />
         <div>
@@ -39,11 +41,55 @@
         </div>
       </section>
 
-      <section class="panel" id="shop">
+      <!--2nd border (category)-->
+      <section class="panel" id="shop"> 
         <h2>Shop by category</h2>
         <p>Find any part in three clicks or fewer. Filter by voltage, package type, brand, price, or availability.</p>
+        <div class="slider">
+          <button class="arrow" id="prev" type="button">&#9664;</button>
+          <div class="track" id="track">
+            <div class="item">
+              <img src="images/catalog-1.png" alt="LED assortment pack" />
+              <h3>LED Assortment</h3>
+              <p>$4.99</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+            <div class="item">
+              <img src="images/catalog-2.png" alt="Jumper cables" />
+              <h3>Jumper Cables</h3>
+              <p>$3.49</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+            <div class="item">
+              <img src="images/catalog-3.png" alt="Soldering iron kit" />
+              <h3>Soldering Iron Kit</h3>
+              <p>$18.00</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+            <div class="item">
+              <img src="images/catalog-4.png" alt="Microchips" />
+              <h3>Microchips</h3>
+              <p>$6.75</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+            <div class="item">
+              <img src="images/catalog-5.png" alt="Transistor set" />
+              <h3>Transistor Set</h3>
+              <p>$5.25</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+            <div class="item">
+              <img src="images/catalog-6.png" alt="Breadboard" />
+              <h3>Breadboard</h3>
+              <p>$7.50</p>
+              <a class="button" href="#shop">View</a>
+            </div>
+          </div>
+          <button class="arrow" id="next" type="button">&#9654;</button>
+        </div>
       </section>
 
+      <!--3rd border (auction side)-->
       <section class="panel" id="auction">
         <h2>Auction</h2>
         <p>Bid on rare, discontinued, and surplus parts. Each listing shows the starting price, minimum bid increment, countdown, and full bid history.</p>
@@ -55,6 +101,7 @@
         </ol>
       </section>
 
+      <!--4th border (trading hub)-->
       <section class="panel hero" id="trading">
         <img src="images/ffsticker3.png" alt="Trading hub mascot" />
         <div>
@@ -64,17 +111,20 @@
         </div>
       </section>
 
+      <!--5th border (LEARN)-->
       <section class="panel" id="learn">
         <h2>Learn</h2>
         <p>Short guides for getting your first circuit working.</p>
       </section>
 
+      <!--6th border About us-->
       <section class="panel" id="about">
         <h2>About Us</h2>
         <p>Skrapyard combines a curated parts store with a community that sells, swaps, and auctions. Our goal is to be the beginner-friendly place to get common parts, and the fair place to find the rare ones.</p>
         <p>Buying electronic parts usually means choosing between big distributors built for bulk orders and general marketplaces where quality is hit or miss. Beginners struggle to find the right component, and leftover parts from finished projects sit in drawers.</p>
       </section>
 
+      <!--7th border (contact) w/ SELECT optiion-->
       <section class="panel" id="contact">
         <h2>Contact Us</h2>
         <p>Need help with an order, a return, or a dispute? Send us a message and we will reply by email.</p>
@@ -91,6 +141,7 @@
       </section>
     </main>
 
+    <!--bottom border feet brah-->
     <footer>
       <nav>
         <a href="#contact">Help</a>
@@ -101,5 +152,11 @@
       <p>Electronic essentials and hardware parts, from new stock to rare finds.</p>
       <p>&copy; 2026 Skrapyard. Website design by Racel Rey T. Castil, BSIT-2A.</p>
     </footer>
+
+    <script>
+      const track = document.getElementById('track');
+      document.getElementById('prev').onclick = () => track.scrollBy({ left: -192 });
+      document.getElementById('next').onclick = () => track.scrollBy({ left: 192 });
+    </script>
   </body>
 </html>
